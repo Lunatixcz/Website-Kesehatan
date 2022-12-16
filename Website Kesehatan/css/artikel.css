@@ -17,15 +17,15 @@ h1 {
     font-size: 72px;
 }
 h2 {
-    font-size: 40px;
+    font-size: 64px;
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 56px;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 36px;
 }
 
 h5 {
@@ -142,4 +142,13 @@ a:hover{
 
 .main-content-content{
     margin-top: 24px;
+}
+
+.main-content img{
+    height: 200px;
+    width: 100%;
+}
+
+.main-content .card-body{
+    padding-top: 40px;
 }
