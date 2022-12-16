@@ -264,3 +264,12 @@ a:hover {
 #li {
   background-image: url("../image/Linkedin.png");
 }
+
+.footer a li {
+  color: white;
+  transition: 0.15s ease-in-out;
+}
+
+.footer a li:hover {
+  color: rgb(223, 223, 223);
+}
