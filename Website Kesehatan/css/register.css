@@ -1,0 +1,51 @@
+#reg {
+  height: 100vh;
+}
+
+#reg > .row {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+#reg-card {
+  margin: auto;
+  position: relative;
+  top: 15.5vh;
+  height: 80vh;
+  width: 60%;
+  background-color: rgb(249, 249, 249);
+  border-radius: 8px;
+  box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.226);
+  padding: 2%;
+}
+
+#reg-card h4 {
+  margin-bottom: 20px;
+}
+
+#reg .col-5 {
+  background-color: #9c0e0e;
+  background-image: url("../image/Register.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#reg-btn {
+  background-color: #d00000;
+  border: 2px solid #d00000;
+  transition: 0.15s ease-in-out;
+  margin-top: 8px;
+  color: white;
+}
+
+#reg-btn:hover {
+  background-color: white;
+  color: #d00000;
+}
+
+#perks {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top: 20%;
+}

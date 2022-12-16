@@ -1,193 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Inter&display=swap");
 
 body {
-    margin: auto;
-    padding: auto;
-    font-family: 'Inter', sans-serif;
-    color: rgb(108, 108, 108);
+  margin: auto;
+  padding: auto;
+  font-family: "Inter", sans-serif;
+  color: rgb(108, 108, 108);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-    color: black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  color: black;
 }
 
 h1 {
-    font-size: 72px;
+  font-size: 72px;
 }
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 h3 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 h4 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 h5 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(133, 133, 133);
-    transition: 0.1s;
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+  transition: 0.1s;
 }
 
-a:hover{
-    color: #d20000;
+a:hover {
+  color: #d20000;
 }
 
 .navbar {
-    background-color: #d20000;
+  background-color: #d20000;
 }
 
-.navbar img{
-    width: 48px;
-    height: auto;
+.navbar img {
+  width: 48px;
+  height: auto;
 }
 
 .navbar-brand {
-    font-family: 'DM Sans',sans-serif;
-    font-weight: bold;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
 }
 
 .navbar a {
-    color: white;
-    margin: 0px 12px;
+  color: white;
+  margin: 0px 12px;
 }
 
 .larger {
-    font-size: 36px;
-    margin-right: 24px;
-    margin-left: 20px;
+  font-size: 36px;
+  margin-right: 24px;
+  margin-left: 20px;
 }
 
 .larger img {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
-.navbar li a{
-    padding-left: 6px;
-    padding-right: 6px;
+.navbar li a {
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
-.red{
-    color: #d20000;
+.red {
+  color: #d20000;
 }
 
 .greeting {
-   margin-top: 80px;
-   background : url(/Website\ Kesehatan/image/back-1.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
+  margin-top: 80px;
+  background: url(/Website\ Kesehatan/image/back-1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .container-greet {
-    padding: 120px 0px 120px 0px;
+  padding: 120px 0px 120px 0px;
 }
 
-.greet-body{
-    font-size: 24px;
-    color: rgb(133, 133, 133);
+.greet-body {
+  font-size: 24px;
+  color: rgb(133, 133, 133);
 }
 
 .option {
-    margin-top: 64px;
+  margin-top: 64px;
 }
 
-.option img{
-    height: 64px;
-    width: auto;
+.option img {
+  height: 64px;
+  width: auto;
 }
 
-.option h2{
-    margin-bottom: 24px;
+.option h2 {
+  margin-bottom: 24px;
 }
 
-.option .col-md-8{
-    padding-top: 25px;
+.option .col-md-8 {
+  padding-top: 25px;
 }
 
 .col-md-4 {
-    padding:20px;
+  padding: 20px;
 }
 
-.option .card{
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.2s;
+.option .card {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.2s;
 }
 
-.option .card:hover{
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+.option .card:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
 }
 
 .article {
-    margin-top: 64px;
+  margin-top: 64px;
 }
 
-.article .col-4{
-    position: relative;
+.article .col-4 {
+  position: relative;
 }
 
-#bottom{
-    position: absolute;
-    bottom: 12px;
-    right: 0;
+#bottom {
+  position: absolute;
+  bottom: 12px;
+  right: 0;
 }
 
 .article-content {
-    margin-top: 40px;
-    margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.article-content .col-8{
-    padding-left: 0px;
+.article-content .col-8 {
+  padding-left: 0px;
 }
 
-.article h1{
-    font-size: 56px;
+.article h1 {
+  font-size: 56px;
 }
 
-.article p{
-    font-size: 20px;
+.article p {
+  font-size: 20px;
 }
 
 .article a {
-    text-decoration: none;
-    color: #d20000;
-    transition: 0.1s;
+  text-decoration: none;
+  color: #d20000;
+  transition: 0.1s;
 }
 
-.article a:hover{
-    color: rgb(0, 0, 0);
+.article a:hover {
+  color: rgb(0, 0, 0);
 }
 
-.text-content{
-    padding-top: 40px;
+.text-content {
+  padding-top: 40px;
 }
 
-.container-head{
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+.container-head {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .article .card {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.2s;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.2s;
 }
 
-.article .card-title{
-    height: 80px;
+.article .card-title {
+  height: 80px;
 }
 
 .article .card img {
-    height: 178px;
+  height: 178px;
 }
 
 .footer {
-    margin-top: 64px;
+  margin-top: 64px;
+}
+
+#reg-log {
+  position: absolute;
+  right: 20px;
+}
+
+.full-h {
+  height: 100%;
 }
