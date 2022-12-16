@@ -80,7 +80,7 @@ a:hover {
   margin: auto;
   padding: 20px;
 
-  box-shadow: -6px 6px #d20000;
+  box-shadow: -6px 6px rgba(210,0,0, 0.4);
 
   border-radius: 10px;
   background-color: #f8fcff;
@@ -90,3 +90,16 @@ a:hover {
 #pres {
   height: 200px;
 }
+
+.btn {
+  margin-top: 12px;
+  background-color: #d20000;
+  border: 1px solid #d20000;
+}
+
+.btn:hover{
+  background-color: #d2000000;
+  border: 1px solid #d20000 ;
+  color: #d20000;
+}
+
