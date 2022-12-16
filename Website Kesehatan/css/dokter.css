@@ -81,11 +81,12 @@ a:hover {
   padding: 0;
 
   overflow: hidden;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
 }
 
 #contact-box {
   background-color: rgb(251, 251, 251);
-  background-image: url("../image/dokter.png");
+  background-image: url("../image/doctor-2.png");
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
