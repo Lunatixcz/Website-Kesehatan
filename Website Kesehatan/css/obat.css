@@ -5,6 +5,9 @@ body {
   padding: auto;
   font-family: "Inter", sans-serif;
   color: rgb(108, 108, 108);
+  background-image: url("../image/Obat.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 h1,
@@ -72,14 +75,18 @@ a:hover {
 #order-form {
   position: relative;
   top: 180px;
-  width: 500px;
+  width: 750px;
 
   margin: auto;
   padding: 20px;
 
-  box-shadow: -6px 6px #de000075;
+  box-shadow: -6px 6px #d20000;
 
   border-radius: 10px;
-  background-color: #fefff5;
+  background-color: #f8fcff;
   color: black;
+}
+
+#pres {
+  height: 200px;
 }
