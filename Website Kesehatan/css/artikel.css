@@ -30,6 +30,10 @@ a:hover{
     color: #d20000;
 }
 
+.red{
+    color: #d20000;
+}
+
 .navbar {
     background-color: #d20000;
 }
@@ -62,4 +66,12 @@ a:hover{
 .navbar li a{
     padding-left: 6px;
     padding-right: 6px;
+}
+
+.title-section {
+    margin-top: 120px;
+}
+
+.head-content{
+    background-color: 
 }
