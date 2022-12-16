@@ -1,65 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&family=Inter&display=swap");
 
 body {
-    margin: auto;
-    padding: auto;
-    font-family: 'Inter', sans-serif;
-    color: rgb(108, 108, 108);
+  margin: auto;
+  padding: auto;
+  font-family: "Inter", sans-serif;
+  color: rgb(108, 108, 108);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 600;
-   color: black;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  color: black;
 }
 
 h1 {
-    font-size: 72px;
+  font-size: 72px;
 }
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(133, 133, 133);
-    transition: 0.1s;
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+  transition: 0.1s;
 }
 
-a:hover{
-    color: #d20000;
+a:hover {
+  color: #d20000;
 }
 
 .navbar {
-    background-color: #d20000;
+  background-color: #d20000;
 }
 
-.navbar img{
-    width: 48px;
-    height: auto;
+.navbar img {
+  width: 48px;
+  height: auto;
 }
 
 .navbar-brand {
-    font-family: 'DM Sans',sans-serif;
-    font-weight: bold;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
 }
 
 .navbar a {
-    color: white;
-    margin: 0px 12px;
+  color: white;
+  margin: 0px 12px;
 }
 
 .larger {
-    font-size: 36px;
-    margin-right: 24px;
-    margin-left: 20px;
+  font-size: 36px;
+  margin-right: 24px;
+  margin-left: 20px;
 }
 
 .larger img {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
-.navbar li a{
-    padding-left: 6px;
-    padding-right: 6px;
+.navbar li a {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#order-form {
+  position: relative;
+  top: 180px;
+  width: 500px;
+
+  margin: auto;
+  padding: 20px;
+
+  box-shadow: -6px 6px #de000075;
+
+  border-radius: 10px;
+  background-color: #fefff5;
+  color: black;
 }
