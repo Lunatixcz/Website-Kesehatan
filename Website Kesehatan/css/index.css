@@ -243,6 +243,10 @@ a:hover {
   margin-right: 10px;
   cursor: pointer;
   margin-top: 5px;
+  box-shadow: -1px 0.5px white;
+  margin-left: 0;
+  margin-bottom: 0;
+  transition: 0.3s ease-in-out;
 }
 
 #ig {
