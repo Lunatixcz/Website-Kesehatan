@@ -73,5 +73,48 @@ a:hover{
 }
 
 .head-content{
-    background-color: 
+    background-color: rgb(239,244,254);
+    padding: 24px;
+    margin-top: 40px;
+    border-radius: 10px;
 }
+
+.main-content {
+    margin-top: 24px;
+}
+
+.card {
+    border-radius: 4px;
+    padding: 0;
+}
+
+.card img {
+    border-radius: 4px;
+    padding: 0;
+}
+
+.left-card {
+    height: 424px;
+}
+
+.left-card img {
+    height: 110%;
+}
+
+.right-card {
+    height: 200px;
+}
+
+.row-bot{
+    margin-top: 24px;
+}
+
+/* .head-content{
+    background-color: rgb(48, 48, 48);
+    padding: 24px;
+    margin-top: 40px;
+}
+
+h2 {
+    color: white;
+} */
