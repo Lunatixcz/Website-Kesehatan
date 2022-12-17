@@ -11,7 +11,6 @@
   margin: auto;
   position: relative;
   top: 15.5vh;
-  height: 80vh;
   width: 60%;
   background-color: rgb(249, 249, 249);
   border-radius: 8px;
@@ -20,7 +19,7 @@
 }
 
 #reg-card h4 {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 #reg .col-5 {
@@ -52,4 +51,13 @@
 
 .footer {
   margin-top: 0;
+}
+a {
+  text-decoration: underline;
+  color: #d20000;
+}
+
+.sign-up {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
