@@ -7,13 +7,13 @@
   <?php include './nav.php' ?>
 
   <!-- PAGE CONTENTS -->
-  <div class="container-fluid" id="reg">
+  <div class="container-fluid" id="reg" style="height: 130vh;">
     <div class="row">
       <div class="col-7 full-h">
         <div id="reg-card">
-          <form action="reg.php" method="post" id="reg-form">
+          <form id="reg-form">
             <div class="sign-up text-center">
-              Return to <a href="./login.html">Log In</a>
+              Return to <a href="./login.html?s=login">Log In</a>
             </div>
             <center>
               <h4>Register</h4>
@@ -21,18 +21,18 @@
 
             <div class="mb-3">
               <label class="form-label">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama" maxlength="65" required>
+              <input type="text" class="form-control" id="reg-nama" name="nama" maxlength="65" required>
             </div>
 
             <div class="mb-3">
               <label class="form-label">Tanggal Lahir</label>
-              <input type="date" class="form-control" id="bd" name="bd" required>
+              <input type="date" class="form-control" id="reg-bd" name="bd" required>
             </div>
 
             <div class="mb-3">
               <label class="form-label">Jenis Kelamin</label>
-              <select class="form-select" id="jk" name="jk" required>
-                <option selected value="3">Ingin Merahasiakan</option>
+              <select class="form-select" id="reg-jk" name="jk" required>
+                <option selected value="R">Ingin Merahasiakan</option>
                 <option value="P">Pria</option>
                 <option value="W">Wanita</option>
               </select>
@@ -40,12 +40,12 @@
 
             <div class="mb-3">
               <label class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="email" name="email" required>
+              <input type="email" class="form-control" id="reg-email" name="email" required>
             </div>
 
             <div class="mb-3">
               <label class="form-label">Password</label>
-              <input type="password" class="form-control" id="pw" name="pw" minlength="8" maxlength="30" required>
+              <input type="password" class="form-control" id="reg-pw" name="pw" minlength="4" maxlength="30" required>
             </div>
 
             <button type="submit" class="btn btn-primary" id="reg-btn">Submit</button>

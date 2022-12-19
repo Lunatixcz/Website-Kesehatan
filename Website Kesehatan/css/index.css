@@ -91,7 +91,7 @@ a:hover {
 
 .greeting {
   margin-top: 80px;
-  background: url(/Website\ Kesehatan/image/back-1.png);
+  background: url("../image/Back-1.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -222,7 +222,7 @@ a:hover {
 .table {
   width: 100%;
   border: 0px;
-  border-color: rgba(0, 0, 0, 0.0);
+  border-color: rgba(0, 0, 0, 0);
   color: white;
 }
 
@@ -233,12 +233,12 @@ a:hover {
   text-decoration: underline;
 }
 
-.table td{
+.table td {
   padding: 0;
   padding-top: 4px;
 }
 
-.table a{
+.table a {
   color: white;
 }
 

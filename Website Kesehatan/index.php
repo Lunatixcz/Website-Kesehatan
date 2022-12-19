@@ -1,48 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="icon" href="./image/healthcare white.png">
-</head>
+<?php include 'meta.php' ?>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand larger" href="./index.html"> <img src="./image/healthcare white.png" alt=""> UPH Sehat</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./dokter.html">Chat Dokter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./artikel.html">Artikel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./obat.html">Obat</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav" id="reg-log">
-          <li class="nav-item">
-            <a class="nav-link" href="./register.html">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./login.html">Log In</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php include 'nav.php' ?>
 
   <!-- Greeting page-->
   <div class="greeting">
@@ -58,7 +20,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <a href="./dokter.html">
+          <a href="./dokter.php?s=dokter">
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -74,7 +36,7 @@
           </a>
         </div>
         <div class="col">
-          <a href="./obat.html">
+          <a href="./obat.php?s=obat">
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -90,7 +52,7 @@
           </a>
         </div>
         <div class="col">
-          <a href="./artikel.html">
+          <a href="./artikel.php?s=artikel">
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -117,7 +79,7 @@
           <h2 id="">Artikel</h2>
         </div>
         <div class="col-4 text-end">
-          <a href="./artikel.html" id="bottom">lihat semua ></a>
+          <a href="./artikel.php?s=artikel" id="bottom">lihat semua ></a>
         </div>
       </div>
     </div>
@@ -129,9 +91,10 @@
         </div>
         <div class="col-4 text-content">
           <h1>Resep Makanan Mudah, Sehat, dan Bergizi</h1><br>
-          <p>Anak muda sekarang sangat sulit mencari waktu untuk menyiapkan makanan sehat. Maka dari itu, kami ...</p>
+          <p>Anak muda sekarang sangat sulit mencari waktu untuk menyiapkan makanan sehat. Maka dari itu, kami
+            ...</p>
           <br>
-          <a href="/Artikel/Artikel Resep.html">Baca Selengkapnya ></a>
+          <a href="/Artikel/Artikel Resep.php?s=artikel">Baca Selengkapnya ></a>
         </div>
       </div>
     </div>
@@ -141,7 +104,7 @@
           <img src="./image/Artikel Laki.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Trik Jitu untuk Mendapat Anak Laki-Laki</h5>
-            <a href="/Artikel/Artikel Laki.html">Baca Selengkapnya ></a>
+            <a href="/Artikel/Artikel Laki.html?s=artikel">Baca Selengkapnya ></a>
           </div>
         </div>
       </div>
@@ -150,7 +113,7 @@
           <img src="./image/Artikel Daging.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Daging Sapi dan Kambing, manakah yang lebih tinggi kolestrol</h5>
-            <a href="/Artikel/Artikel Daging.html">Baca Selengkapnya ></a>
+            <a href="/Artikel/Artikel Daging.html?s=artikel">Baca Selengkapnya ></a>
           </div>
         </div>
       </div>
@@ -159,7 +122,7 @@
           <img src="./image/Artikel Jambu.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Ini Manfaat Jambu Kristal untuk Ibu Hamil</h5>
-            <a href="/Artikel/Artikel Jambu.html">Baca Selengkapnya ></a>
+            <a href="/Artikel/Artikel Jambu.html?s=artikel">Baca Selengkapnya ></a>
           </div>
         </div>
       </div>
@@ -168,7 +131,7 @@
           <img src="./image/Artikel Kiwi.jpg" card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Manfaat Buat Kiwi untuk Kesehatan Pria</h5>
-            <a href="/Artikel/Artikel Kiwi.html">Baca Selengkapnya ></a>
+            <a href="/Artikel/Artikel Kiwi.html?artikel=s">Baca Selengkapnya ></a>
           </div>
         </div>
       </div>
@@ -177,43 +140,7 @@
 
   <div style="height: 20vh;"></div>
 
-  <!--Footer-->
-  <div class="footer text-left">
-    <div class="container">
-      <table class="table">
-        <thead>
-          <th scope="col">Hubungi Kami</th>
-          <th scope="col">Lainnya</th>
-          <th scope="col">Sosial Media</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td scope="col">08XX-XXXX-XXXX</td>
-            <td scope="col"><a href="">Syarat dan Ketentuan</a></td>
-            <td scope="col"><a href="">Instagram</a></td>
-          </tr>
-          <tr>
-            <td scope="col">sehat@uph.co.id</td>
-            <td scope="col"><a href="">Kebijakan Privasi</a></td>
-            <td scope="col"><a href="">Facebook</a></td>
-          </tr>
-          <tr>
-            <td colspan="2"></td>
-            <td scope="col"><a href="">Twitter</a></td>
-          </tr>
-          <tr>
-            <td colspan="2"></td>
-            <td scope="col"><a href="">LinkedIn</a></td>
-          </tr>
-        </tbody>
-      </table>
-      <p id="copyright"> Hak Cipta&copy; UPH Sehat 2022</p>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+  <?php include 'footer.php' ?>
 </body>
 
 </html>

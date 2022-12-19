@@ -1,48 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Artikel</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/artikel.css">
-</head>
+<?php include './meta.php' ?>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand larger" href="./index.html"> <img src="./image/healthcare white.png" alt=""> UPH Sehat</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./dokter.html">Chat Dokter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./artikel.html">Artikel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./obat.html">Obat</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav" id="reg-log">
-          <li class="nav-item">
-            <a class="nav-link" href="./register.html">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./login.html">Log In</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php include './nav.php' ?>
 
   <!--Title-->
   <div class="title-section container">
@@ -57,7 +19,7 @@
     <div class="featured-content text-center">
       <div class="row">
         <div class="col-6">
-          <a href="../Artikel/Artikel Resep.html">
+          <a href="../Artikel/Artikel Resep.html?s=artikel">
             <div class="card left-card">
               <img src="./image/Recipe.jpg" class="card-img left-card-img" alt="..." style="height: 425px;">
               <div class="card-img-overlay">
@@ -71,19 +33,20 @@
         <div class="col-6">
           <div class="row">
             <div class="col">
-              <a href="../Artikel/Artikel M Sehat.html">
+              <a href="../Artikel/Artikel M Sehat.html?s=artikel">
                 <div class="card">
                   <img src="./image/Artikel MakananB.jpg" class=" card-img right-card-img" alt="...">
                   <div class="card-img-overlay">
                     <div class="bgm-dark">
-                      <h5 class="card-title">Makanan yang Dianggap Buruk ini Ternyata Sehat Loh</h5>
+                      <h5 class="card-title">Makanan yang Dianggap Buruk ini Ternyata Sehat Loh
+                      </h5>
                     </div>
                   </div>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a href="/Artikel/Artikel Libur Sehat.html">
+              <a href="/Artikel/Artikel Libur Sehat.html?s=artikel">
                 <div class="card">
                   <img src="./image/Yogs.jpg" class="card-img right-card-img" alt="...">
                   <div class="card-img-overlay">
@@ -97,19 +60,20 @@
           </div>
           <div class="row row-bot">
             <div class="col">
-              <a href="/Artikel/Artikel Kucing.html">
+              <a href="/Artikel/Artikel Kucing.html?s=artikel">
                 <div class="card">
                   <img src="./image/Cataract.jpg" class="card-img right-card-img" alt="...">
                   <div class="card-img-overlay">
                     <div class="bgm-dark">
-                      <h5 class="card-title">6 Penyebab Katarak pada Kucing dan Cara Mengatasinya</h5>
+                      <h5 class="card-title">6 Penyebab Katarak pada Kucing dan Cara Mengatasinya
+                      </h5>
                     </div>
                   </div>
                 </div>
               </a>
             </div>
             <div class="col">
-              <a href="/Artikel/Artikel Bayi.html">
+              <a href="/Artikel/Artikel Bayi.html?s=artikel">
                 <div class="card">
                   <img src="./image/Artikel Bayi.jpg" class="card-img right-card-img" alt="...">
                   <div class="card-img-overlay">
@@ -141,7 +105,7 @@
               <h4 class="card-title">Trik Jitu untuk Mendapat Anak Laki-Laki</h4>
               <p class="card-text">Kesulitan mendapat anak laki-laki, mungkin kamu belum coba cara ini...
               </p>
-              <a href="/Artikel/Artikel Laki.html">Baca Selengkapnya ></a>
+              <a href="/Artikel/Artikel Laki.html?s=artikel">Baca Selengkapnya ></a>
             </div>
           </div>
         </div>
@@ -156,7 +120,7 @@
               <h4 class="card-title">Sapi atau Kambingkah, yang Lebih Tinggi kolestrol</h4>
               <p class="card-text">Daging sapi dan Kambing sering dikomsumsi, namun apakah sehat...
               </p>
-              <a href="/Artikel/Artikel Daging.html">Baca Selengkapnya ></a>
+              <a href="/Artikel/Artikel Daging.html?s=artikel">Baca Selengkapnya ></a>
             </div>
           </div>
         </div>
@@ -171,7 +135,7 @@
               <h4 class="card-title">Ini Manfaat Jambu Kristal untuk Ibu Hamil</h4>
               <p class="card-text">Buat ibu-ibu yang lagi hamil, ada informasi baru loh buat si kecil...
               </p>
-              <a href="/Artikel/Artikel Jambu.html">Baca Selengkapnya ></a>
+              <a href="/Artikel/Artikel Jambu.html?s=artikel">Baca Selengkapnya ></a>
             </div>
           </div>
         </div>
@@ -184,9 +148,10 @@
           <div class="col-md-8">
             <div class="card-body">
               <h4 class="card-title">Ini Manfaat Buah Kiwi untuk Kesehatan Pria</h4>
-              <p class="card-text">Selain rasanya yang lezat, buah kiwi ternyata menyimpan banyak manfaat loh...
+              <p class="card-text">Selain rasanya yang lezat, buah kiwi ternyata menyimpan banyak manfaat
+                loh...
               </p>
-              <a href="/Artikel/Artikel Kiwi.html">Baca Selengkapnya ></a>
+              <a href="/Artikel/Artikel Kiwi.html?s=artikel">Baca Selengkapnya ></a>
             </div>
           </div>
         </div>
@@ -194,43 +159,8 @@
     </div>
   </div>
   <div style="height: 20vh;"></div>
-  <!--Footer-->
-  <div class="footer text-left">
-    <div class="container">
-      <table class="table">
-        <thead>
-          <th scope="col">Hubungi Kami</th>
-          <th scope="col">Lainnya</th>
-          <th scope="col">Sosial Media</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td scope="col">08XX-XXXX-XXXX</td>
-            <td scope="col"><a href="">Syarat dan Ketentuan</a></td>
-            <td scope="col"><a href="">Instagram</a></td>
-          </tr>
-          <tr>
-            <td scope="col">sehat@uph.co.id</td>
-            <td scope="col"><a href="">Kebijakan Privasi</a></td>
-            <td scope="col"><a href="">Facebook</a></td>
-          </tr>
-          <tr>
-            <td colspan="2"></td>
-            <td scope="col"><a href="">Twitter</a></td>
-          </tr>
-          <tr>
-            <td colspan="2"></td>
-            <td scope="col"><a href="">LinkedIn</a></td>
-          </tr>
-        </tbody>
-      </table>
-      <p id="copyright"> Hak Cipta&copy; UPH Sehat 2022</p>
-    </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+  <?php include './footer.php' ?>
 </body>
 
 </html>
