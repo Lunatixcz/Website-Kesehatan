@@ -95,6 +95,14 @@ a:hover {
   margin-top: 12px;
   background-color: #d20000;
   border: 1px solid #d20000;
+  text-align: left;
+  width: 100%;
+  text-align: left;
+}
+
+.form-check .btn {
+  background-color: rgba(255, 255, 255, 0);
+  color: #d20000;
 }
 
 .btn:hover{
@@ -107,6 +115,3 @@ a:hover {
   margin-top: 30vh;
 }
 
-.btn{
-  width: 100%;
-} 

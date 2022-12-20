@@ -2,7 +2,6 @@
 <html lang="en">
 
 <?php include './meta.php' ?>
-
 <body>
   <?php include './nav.php' ?>
 
