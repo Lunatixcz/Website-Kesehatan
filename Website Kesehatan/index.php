@@ -3,7 +3,7 @@ include 'config.php';
 
 session_start();
 
-if (isset($_SESSION['email'])) {
+if (isset($_SESSION['name'])) {
   header("Location: dashboard.php");
 }
 
@@ -17,7 +17,7 @@ if (isset($_POST['login_submit'])) {
     $acc = mysqli_fetch_assoc($res);
     echo "<script>alert('Login berhasil, selamat datang!')</script>";
 
-    $_SESSION['email'] = $acc['email'];
+    $_SESSION['name'] = $acc['nama'];
     header('Location: dashboard.php');
   } else {
     echo "<script>alert('email atau password tidak ditemukan, silahkan coba lagi!')</script>";
@@ -31,7 +31,37 @@ if (isset($_POST['login_submit'])) {
 <?php include 'meta.php' ?>
 
 <body>
-  <?php include 'nav.php' ?>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand larger" href="./dashboard.php"> <img src="./image/healthcare white.png" alt=""> USU
+        Sehat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./dokter.php?s=dokter">Chat Dokter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./artikel.php?s=artikel">Artikel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./obat.php?s=obat">Obat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cart.php?s=cart">Cart</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav" id="reg-log">
+          <li class="nav-item">
+            <a class="nav-link" href="./register.php?s=register">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- PAGE CONTENTS -->
   <div class="container-fluid" id="reg">

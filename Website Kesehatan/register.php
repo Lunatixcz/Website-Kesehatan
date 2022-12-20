@@ -1,17 +1,84 @@
+<?php
+
+include 'config.php';
+
+session_start();
+
+if (isset($_SESSION['name'])) {
+  header('Location: dashboard.php');
+}
+
+if (isset($_POST['submit'])) {
+  $nama = $_POST['nama'];
+  $tgl = $_POST['bd'];
+  $jk = $_POST['jk'];
+  $email = $_POST['email'];
+  $pass1 = $_POST['pw'];
+  $pass = hash('sha256', $pass1);
+
+  $check = mysqli_query($con, "SELECT * FROM accounts WHERE `email` = '$email'");
+
+  if ($check->num_rows <= 0) {
+    $query = "INSERT INTO accounts VALUES ('$nama','$tgl','$jk','$email','$pass')";
+    $execQuery = mysqli_query($con, $query);
+    if ($execQuery) {
+      echo "<script>alert('Akun berhasil dibuat')</script>";
+      header('Location: index.php');
+    } else {
+      echo "<script>alert('Akun gagal dibuat, mohon dicek data dalam form')</script>";
+      header('Location: register.php');
+    }
+  }
+} else {
+  echo "<script>alert('No Access')</script>";
+  header('Location: register.php');
+}
+
+?>
 <!doctype html>
 <html lang="en">
 
 <?php include './meta.php'; ?>
 
 <body>
-  <?php include './nav.php' ?>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand larger" href="./dashboard.php"> <img src="./image/healthcare white.png" alt=""> USU
+        Sehat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./dokter.php?s=dokter">Chat Dokter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./artikel.php?s=artikel">Artikel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./obat.php?s=obat">Obat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cart.php?s=cart">Cart</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav" id="reg-log">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.php">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- PAGE CONTENTS -->
   <div class="container-fluid" id="reg" style="height: 130vh;">
     <div class="row">
       <div class="col-7 full-h">
         <div id="reg-card">
-          <form id="reg-form">
+          <form id="reg-form" method="POST" action="">
             <div class="sign-up text-center">
               Return to <a href="./login.html?s=login">Log In</a>
             </div>
