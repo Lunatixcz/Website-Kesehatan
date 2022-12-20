@@ -8,6 +8,7 @@ if (!empty($_POST)) {
   $data = mysqli_fetch_array($res);
 
   if (!empty($data)) {
+    session_destroy();
     $_SESSION['email'] = $data['email'];
     $_SESSION['name'] = $data['nama'];
     $message['login'] = 'Login berhasil!';

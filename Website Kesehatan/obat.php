@@ -3,6 +3,12 @@
 
 <?php include 'meta.php' ?>
 
+<style>
+  .btn {
+  width: 100%;
+} 
+</style>
+
 <body>
   <?php include 'nav.php' ?>
 
@@ -38,20 +44,23 @@
         <input type="text" class="form-control" id="camat" name="camat">
       </div>
       <div class="mb-3">
-        <label for="lurah" class="form-label">Kelurahan</label>
-        <input type="text" class="form-control" id="lurah" name="lurah">
-      </div>
-      <div class="mb-3">
-        <label for="desa" class="form-label">Desa</label>
-        <input type="text" class="form-control" id="desa" name="desa">
-      </div>
-      <div class="mb-3">
-        <label for="jalan" class="form-label">Jalan</label>
-        <input type="text" class="form-control" id="jalan" name="jalan">
-      </div>
-      <div class="mb-3">
         <label for="pos" class="form-label">Kode Pos</label>
         <input type="text" class="form-control" id="pos" name="pos">
+      </div>
+
+      <h5>Metode Pembayaran</h5>
+      <div class="mb-3 form-check">
+        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+        <label class="btn btn-secondary" for="option1">Checked</label><br>
+
+        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+        <label class="btn btn-secondary" for="option2">Radio</label><br>
+
+        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+        <label class="btn btn-secondary for="option3">Disabled</label><br>
+
+        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+        <label class="btn btn-secondary" for="option4">Radio</label><br>
       </div>
 
 

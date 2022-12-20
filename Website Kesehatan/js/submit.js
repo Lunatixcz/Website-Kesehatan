@@ -13,8 +13,6 @@ $(document).ready(function () {
       type: "POST",
       url: "reg.php",
       data: sent_data,
-    }).done(function (response) {
-      window.alert(response);
     });
     event.preventDefault();
   });

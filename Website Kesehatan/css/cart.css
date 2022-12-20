@@ -1,0 +1,49 @@
+body {
+    margin: auto;
+    padding: auto;
+    font-family: 'Inter', sans-serif;
+    color: rgb(108, 108, 108);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 56px;
+}
+
+h4 {
+    font-size: 36px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+    transition: 0.1s;
+}
+
+a:hover{
+    color: #d20000;
+}
+
+.red{
+    color: #d20000;
+}
+
+.title-section {
+    margin-top: 120px;
+}

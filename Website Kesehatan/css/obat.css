@@ -106,3 +106,7 @@ a:hover {
 .footer {
   margin-top: 30vh;
 }
+
+.btn{
+  width: 100%;
+} 

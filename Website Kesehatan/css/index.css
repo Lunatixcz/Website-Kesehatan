@@ -90,7 +90,7 @@ a:hover {
 }
 
 .greeting {
-  margin-top: 80px;
+  margin-top: 0px;
   background: url("../image/Back-1.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@ a:hover {
 }
 
 .option img {
-  height: 64px;
+  height: 48px;
   width: auto;
 }
 
@@ -119,7 +119,7 @@ a:hover {
 }
 
 .option .col-md-8 {
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .col-md-4 {
