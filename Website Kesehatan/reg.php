@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-if($_POST){
+if ($_POST) {
     $nama = $_POST['nama'];
     $tgl = $_POST['bd'];
     $jk = $_POST['jk'];
@@ -12,6 +12,10 @@ if($_POST){
 
     $query = "INSERT INTO accounts VALUES ('$nama','$tgl','$jk','$email','$pass')";
     $execQuery = mysqli_query($con, $query);
+    console . log("registered");
+    echo '<script>window.location.replace("./index.php");</script>';
+    exit();
 } else {
     echo "No Access";
 }
+?>

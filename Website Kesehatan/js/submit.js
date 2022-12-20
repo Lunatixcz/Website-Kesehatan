@@ -17,23 +17,23 @@ $(document).ready(function () {
     event.preventDefault();
   });
 
-  $("#login-form").submit(function (event) {
-    console.log("sent form");
+  // $("#login-form").submit(function (event) {
+  //   console.log("sent form");
 
-    var sent_data = {
-      login_email: $("#log-email").val(),
-      login_pw: $("#log-pw").val(),
-      submit: $("#log-submit").val(),
-    };
+  //   var sent_data = {
+  //     login_email: $("#log-email").val(),
+  //     login_pw: $("#log-pw").val(),
+  //     login_submit: $("#log-submit").val(),
+  //   };
 
-    $.ajax({
-      type: "POST",
-      url: "index.php",
-      data: sent_data,
-    }).done(function (e) {
-      window.alert(e);
-    });
+  //   $.ajax({
+  //     type: "POST",
+  //     url: "index.php",
+  //     data: sent_data,
+  //   }).done(function (e) {
+  //     window.alert(e);
+  //   });
 
-    event.preventDefault();
-  });
+  //   event.preventDefault();
+  // });
 });
