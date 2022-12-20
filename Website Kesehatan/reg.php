@@ -12,7 +12,7 @@ if ($_POST) {
 
     $query = "INSERT INTO accounts VALUES ('$nama','$tgl','$jk','$email','$pass')";
     $execQuery = mysqli_query($con, $query);
-    console . log("registered");
+    console.log("registered");
     echo '<script>window.location.replace("./index.php");</script>';
     exit();
 } else {
