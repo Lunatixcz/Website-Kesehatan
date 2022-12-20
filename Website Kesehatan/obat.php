@@ -3,18 +3,12 @@
 
 <?php include 'meta.php' ?>
 
-<style>
-  .btn {
-  width: 100%;
-} 
-</style>
-
 <body>
   <?php include 'nav.php' ?>
 
   <!-- PAGE CONTENTS -->
   <div id="order-form">
-    <form action="./index.html">
+    <form action="./obat-act.php" method="POST">
       <h5>Informasi Medis</h5>
       <div class="mb-3">
         <label for="pres" class="form-label">Preskripsi</label>
@@ -36,7 +30,7 @@
         <input type="text" class="form-control" id="provinsi" name="provinsi">
       </div>
       <div class="mb-3">
-        <label for="kota" class="form-label">Kota</label>
+        <label for="kota" class="form-label">Kabupaten/Kota</label>
         <input type="text" class="form-control" id="kota" name="kota">
       </div>
       <div class="mb-3">
@@ -49,18 +43,14 @@
       </div>
 
       <h5>Metode Pembayaran</h5>
-      <div class="mb-3 form-check text-start">
-        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-        <label class="btn btn-secondary" for="option1">Checked</label><br>
-
-        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-        <label class="btn btn-secondary" for="option2">Radio</label><br>
-
-        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-        <label class="btn btn-secondary for="option3">Disabled</label><br>
-
-        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-        <label class="btn btn-secondary" for="option4">Radio</label><br>
+      <div class="mb-3">
+        <label class="form-label">Pilih Metode Pembayran</label>
+        <select class="form-select" id="metode" name="metode" required>
+          <option value="Debit/Credit">Debit/Credit</option>
+          <option value="M-Banking">M-Banking</option>
+          <option value="Transfer ATM">Transfer ATM</option>
+          <option value="COD">COD</option>
+        </select>
       </div>
 
 
@@ -70,7 +60,7 @@
       </div>
 
       <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
-        data-bs-target="#order-confirmed">Submit</button>
+        data-bs-target="#order-confirmed" style="width: auto;">Submit</button>
     </form>
   </div>
 

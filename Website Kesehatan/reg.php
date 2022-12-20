@@ -12,6 +12,6 @@ if($_POST){
 
     $query = "INSERT INTO accounts VALUES ('$nama','$tgl','$jk','$email','$pass')";
     $execQuery = mysqli_query($con, $query);
-
-    echo "<script>window.location.href = 'login.php';</script>";
+} else {
+    echo "No Access";
 }
