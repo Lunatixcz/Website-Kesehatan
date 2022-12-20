@@ -11,7 +11,7 @@ if($_POST){
     $pos = $_POST['pos'];
     $metode = $_POST['metode'];
 
-    $query = "INSERT INTO obat VALUES(NULL, '$preskripsi', '$dokter', '$provinsi', '$kota', '$camat', '$pos', '$metode')";
+    $query = "INSERT INTO obat VALUES(NULL, '$preskripsi', '$dokter', '$provinsi', '$kota', '$camat', '$pos', '$metode', NULL)";
     $execQuery = mysqli_query($con, $query);
 } else {
     echo "No Access";

@@ -47,3 +47,51 @@ a:hover{
 .title-section {
     margin-top: 120px;
 }
+
+.table th {
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.table td{
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.btn {
+    width: auto;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+a {
+    color: black;
+}
+
+.del {
+    background-color: rgb(211, 38, 38);
+    border: 2px solid rgb(211, 38, 38);
+}
+
+.del:hover {
+    background-color: rgba(0,0,0,0);
+    border: 2px solid rgb(211, 38, 38);
+    color: rgb(211, 38, 38) !important;
+}
+
+.edit {
+    background-color: rgb(34, 55, 246);
+    border: 2px solid rgb(34, 55, 246);
+}
+
+.edit:hover {
+    background-color: rgba(0,0,0,0);
+    border: 2px solid rgb(34, 55, 246);
+    color: rgb(34, 55, 246) !important;
+}
+
+.btn-pad{
+    padding-top: 8px !important;
+}
