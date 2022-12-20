@@ -26,12 +26,8 @@ if (isset($_POST['submit'])) {
       header('Location: index.php');
     } else {
       echo "<script>alert('Akun gagal dibuat, mohon dicek data dalam form')</script>";
-      header('Location: register.php');
     }
   }
-} else {
-  echo "<script>alert('No Access')</script>";
-  header('Location: register.php');
 }
 
 ?>
@@ -65,8 +61,30 @@ if (isset($_POST['submit'])) {
           </li>
         </ul>
         <ul class="navbar-nav" id="reg-log">
+          <a class="nav-link disabled" style="font-weight: bolder; color: white;">
+            <?php
+          session_start();
+          if (isset($_SESSION['name'])) {
+            echo $_SESSION['name'];
+          } else {
+            echo 'Anonymous User';
+          }
+          ?>
+          </a>
+          <?php
+        if (isset($_SESSION['name'])) {
+          echo '
+        <li class="nav-item">
+          <a class="nav-link" href="./logout.php">Log out</a>
+        </li>
+        ';
+        }
+        ?>
           <li class="nav-item">
             <a class="nav-link" href="./index.php">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./register.php">Register</a>
           </li>
         </ul>
       </div>

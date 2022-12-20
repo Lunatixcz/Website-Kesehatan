@@ -23,11 +23,32 @@
       </ul>
       <ul class="navbar-nav" id="reg-log">
         <a class="nav-link disabled" style="font-weight: bolder; color: white;">
-          <?php session_start();
-          echo $_SESSION['name']; ?>
+          <?php
+          if (session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_NONE) {
+            // session isn't started
+            session_start();
+          }
+          if (isset($_SESSION['name'])) {
+            echo $_SESSION['name'];
+          } else {
+            echo 'Anonymous User';
+          }
+          ?>
         </a>
+        <?php
+        if (isset($_SESSION['name'])) {
+          echo '
         <li class="nav-item">
-          <a class="nav-link" href="./logout.php">Log Out</a>
+          <a class="nav-link" href="./logout.php">Log out</a>
+        </li>
+        ';
+        }
+        ?>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.php">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./register.php">Register</a>
         </li>
       </ul>
     </div>
