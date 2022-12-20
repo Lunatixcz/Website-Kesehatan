@@ -22,6 +22,10 @@
         </li>
       </ul>
       <ul class="navbar-nav" id="reg-log">
+        <a class="nav-link disabled" style="font-weight: bolder; color: white;">
+          <?php session_start();
+          echo $_SESSION['name']; ?>
+        </a>
         <li class="nav-item">
           <a class="nav-link" href="./logout.php">Log Out</a>
         </li>
