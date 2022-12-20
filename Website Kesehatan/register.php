@@ -37,6 +37,7 @@ if (isset($_POST['submit'])) {
 <?php include './meta.php'; ?>
 
 <body>
+  <?php include 'nav.php' ?>
 
   <!-- PAGE CONTENTS -->
   <div class="container-fluid" id="reg" style="height: 130vh;">
