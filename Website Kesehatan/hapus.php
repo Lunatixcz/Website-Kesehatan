@@ -1,25 +1,11 @@
 <?php
-if ($_POST['id_transaksi']) {
+if ($_GET['id_transaksi']) {
     include 'config.php';
-    $nim = $_GET['nim'];
+    $id= $_GET['id_transaksi'];
 
-    $query = "DELETE FROM mahasiswa WHERE nim = '$nim'";
-    $execQuery = mysqli_query($conn, $query);
-
-
-    if ($execQuery) {
-        echo
-        "<script>
-        alert('Data berhasil dihapus');
-        window.location.href = 'index.php';
-        </script>";
-    } else {
-        echo
-        "<script>
-        alert('Data gagal dihapus');
-        window.location.href = 'index.php';
-        </script>";
-    }
+    $query = "DELETE FROM obat WHERE id_transaksi = '$id'";
+    $execQuery = mysqli_query($con, $query);
+    
 } else {
-    echo "No NIM";
+    echo "No Transaction";
 }
