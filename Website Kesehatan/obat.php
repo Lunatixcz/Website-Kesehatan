@@ -49,7 +49,7 @@
       </div>
 
       <h5>Metode Pembayaran</h5>
-      <div class="mb-3 form-check">
+      <div class="mb-3 form-check text-start">
         <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
         <label class="btn btn-secondary" for="option1">Checked</label><br>
 
