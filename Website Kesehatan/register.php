@@ -48,7 +48,7 @@
               <input type="password" class="form-control" id="reg-pw" name="pw" minlength="4" maxlength="30" required>
             </div>
 
-            <button type="submit" class="btn btn-primary" id="reg-btn">Submit</button>
+            <button type="submit" class="btn btn-primary" id="reg-btn" name="submit">Submit</button>
           </form>
         </div>
       </div>

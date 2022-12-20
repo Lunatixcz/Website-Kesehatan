@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand larger" href="./index.php"> <img src="./image/healthcare white.png" alt=""> USU
+        <a class="navbar-brand larger" href="./dashboard.php"> <img src="./image/healthcare white.png" alt=""> USU
             Sehat</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
                     <a class="nav-link" href="./register.php?s=register">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./login.php?s=login">Log In</a>
+                    <a class="nav-link" href="./index.php?s=login">Log In</a>
                 </li>
             </ul>
         </div>

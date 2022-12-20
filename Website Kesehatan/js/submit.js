@@ -18,18 +18,20 @@ $(document).ready(function () {
   });
 
   $("#login-form").submit(function (event) {
+    console.log("sent form");
+
     var sent_data = {
-      email: $("#log-email").val(),
-      pw: $("#log-pw").val(),
+      login_email: $("#log-email").val(),
+      login_pw: $("#log-pw").val(),
+      submit: $("#log-submit").val(),
     };
 
     $.ajax({
       type: "POST",
-      url: "log-act.php",
+      url: "index.php",
       data: sent_data,
-    }).done(function (response) {
-      window.alert(response);
-      if (response == "Login berhasil!") window.location.replace("./index.php");
+    }).done(function (e) {
+      window.alert(e);
     });
 
     event.preventDefault();

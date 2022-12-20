@@ -279,7 +279,7 @@ a:hover {
   background-position: center;
 }
 
-#reg-btn {
+#log-submit {
   background-color: #d20000;
   border: 2px solid #d20000;
   transition: 0.15s ease-in-out;
@@ -287,7 +287,7 @@ a:hover {
   color: white;
 }
 
-#reg-btn:hover {
+#log-submit:hover {
   background-color: white;
   color: #d20000;
 }

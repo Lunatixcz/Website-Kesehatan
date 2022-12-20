@@ -1,6 +1,27 @@
 <?php
+include 'config.php';
+
+
+
 if (isset($_SESSION['username'])) {
-  header("Location: home.php");
+  header("Location: ./dashboard.php");
+}
+
+if (isset($_POST['submit'])) {
+  $email = $_POST['login_email'];
+  $password = hash("sha256", $_POST['login_pw']);
+
+  $q = "SELECT * FROM accounts WHERE `email` = '$email' AND `password`='$password'";
+  $res = mysqli_query($con, $q);
+  if ($res->num_rows >= 0) {
+    session_start();
+    $acc = mysqli_fetch_assoc($res);
+    echo "Login berhasil, selamat datang " . $acc['name'];
+    $_SESSION['name'] = $acc['name'];
+    header('Location: ./dashboard.php');
+  } else {
+    echo "<script>window.alert('email atau password tidak ditemukan, silahkan coba lagi!')</script>";
+  }
 }
 
 ?>
@@ -35,10 +56,11 @@ if (isset($_SESSION['username'])) {
               <label class="form-label">Password</label>
               <input type="password" class="form-control" id="log-pw" name="pw" required>
             </div>
+
             <div class="forgot">
               <a href="">Forgot Password?</a>
             </div>
-            </a>
+            <button type="submit" class="btn btn-primary" id="log-submit" name="submit">Submit</button>
           </form>
         </div>
       </div>
