@@ -245,3 +245,82 @@ a:hover {
 .table a:hover {
   color: rgb(193, 193, 193);
 }
+
+#reg {
+  height: 100vh;
+}
+
+#reg > .row {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+#reg-card {
+  margin: auto;
+  margin-top: 12vh;
+  margin-bottom: auto;
+  position: relative;
+  top: 15.5vh;
+  width: 50%;
+  background-color: rgb(249, 249, 249);
+  border-radius: 8px;
+  box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.226);
+  padding: 2%;
+}
+
+#reg-card h4 {
+  margin-bottom: 20px;
+}
+
+#reg .col-5 {
+  background-color: #9c0e0e;
+  background-image: url("../image/Register.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#reg-btn {
+  background-color: #d20000;
+  border: 2px solid #d20000;
+  transition: 0.15s ease-in-out;
+  margin-top: 8px;
+  color: white;
+}
+
+#reg-btn:hover {
+  background-color: white;
+  color: #d20000;
+}
+
+#perks {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top: 20%;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+.btn {
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.forgot {
+  margin-top: -8px;
+  margin-bottom: 24px;
+}
+
+a {
+  text-decoration: underline;
+  color: #d20000;
+}
+
+.sign-up {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
