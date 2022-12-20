@@ -6,16 +6,31 @@ include 'config.php';
 //   die("");
 // }
 
-$insert_command = "INSERT INTO accounts VALUES ('" . $_POST['nama'] . "', '" . $_POST['bd'] . "', '" . $_POST['jk'] .
-  "', '" . $_POST['email'] . "', '" . hash('sha256', $_POST['pw']) . "');";
+if($POST){
+    $nama = $_POST['nama'];
+    $tgl = $_POST['bd'];
+    $jk = $_POST['jk'];
+    $email = $_POST['email'];
+    $pass = hash('sha256', $_POST['pw']);
 
-if (mysqli_query($con, $insert_command)) {
-  $message['register'] = "Akun berhasil dibuat!";
+
+    $query = "INSERT INTO accounts VALUES ('$nama','$tgl','$jk','$email','$pass')";
+    $execQuery = mysqli_query($con, $query);
+
+    if ($execQuery) {
+        echo
+        "<script>
+        alert('Akun Berhasil Dibuat');
+        window.location.href = 'login.php';
+        </script>";
+    } else {
+        echo
+        "<script>
+        alert('Akun Gagal Dibuat');
+        window.location.href = 'login.php';
+        </script>";
+    }
 } else {
-  $message['register'] = "Akun gagal dibuat!";
+    echo "No Access";
 }
 
-
-echo $message['register'];
-
-?>
