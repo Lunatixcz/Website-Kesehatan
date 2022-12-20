@@ -26,7 +26,7 @@
                     <a class="nav-link" href="./register.php?s=register">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./index.php?s=login">Log In</a>
+                    <a class="nav-link" href="./logout.php">Log Out</a>
                 </li>
             </ul>
         </div>

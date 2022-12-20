@@ -1,9 +1,10 @@
 <?php
 include 'config.php';
 
-
+session_start();
 
 if (isset($_SESSION['username'])) {
+  echo "<script>window.alert(Login berhasil, selamat datang " . $acc['name'] . ")</script>";
   header("Location: ./dashboard.php");
 }
 
@@ -14,7 +15,6 @@ if (isset($_POST['submit'])) {
   $q = "SELECT * FROM accounts WHERE `email` = '$email' AND `password`='$password'";
   $res = mysqli_query($con, $q);
   if ($res->num_rows >= 0) {
-    session_start();
     $acc = mysqli_fetch_assoc($res);
     echo "Login berhasil, selamat datang " . $acc['name'];
     $_SESSION['name'] = $acc['name'];
@@ -32,7 +32,41 @@ if (isset($_POST['submit'])) {
 <?php include 'meta.php' ?>
 
 <body>
-  <?php include 'nav.php' ?>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand larger disabled" href="./dashboard.php"> <img src="./image/healthcare white.png" alt="">
+        USU
+        Sehat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon disabled"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./dokter.php?s=dokter">Chat Dokter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./artikel.php?s=artikel">Artikel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./obat.php?s=obat">Obat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./cart.php?s=cart">Cart</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav" id="reg-log">
+          <li class="nav-item">
+            <a class="nav-link" href="./register.php?s=register">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.php?s=login">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- PAGE CONTENTS -->
   <div class="container-fluid" id="reg">
