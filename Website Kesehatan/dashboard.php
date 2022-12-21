@@ -110,7 +110,7 @@
           <p>Anak muda sekarang sangat sulit mencari waktu untuk menyiapkan makanan sehat. Maka dari itu, kami
             ...</p>
           <br>
-          <a href="/Artikel/Artikel Resep.php?s=artikel">Baca Selengkapnya ></a>
+          <a href="../Artikel/Artikel Resep.php?s=artikel">Baca Selengkapnya ></a>
         </div>
       </div>
     </div>
@@ -120,7 +120,7 @@
           <img src="./image/Artikel Laki.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Trik Jitu untuk Mendapat Anak Laki-Laki</h5>
-            <a href="/Artikel/Artikel Laki.html?s=artikel">Baca Selengkapnya ></a>
+            <a href="../Artikel/Artikel Laki.php?s=artikel">Baca Selengkapnya ></a>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
           <img src="./image/Artikel Daging.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Daging Sapi dan Kambing, manakah yang lebih tinggi kolestrol</h5>
-            <a href="/Artikel/Artikel Daging.html?s=artikel">Baca Selengkapnya ></a>
+            <a href="../Artikel/Artikel Daging.php?s=artikel">Baca Selengkapnya ></a>
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@
           <img src="./image/Artikel Jambu.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Ini Manfaat Jambu Kristal untuk Ibu Hamil</h5>
-            <a href="/Artikel/Artikel Jambu.html?s=artikel">Baca Selengkapnya ></a>
+            <a href="../Artikel/Artikel Jambu.php?s=artikel">Baca Selengkapnya ></a>
           </div>
         </div>
       </div>
@@ -147,7 +147,7 @@
           <img src="./image/Artikel Kiwi.jpg" card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Manfaat Buat Kiwi untuk Kesehatan Pria</h5>
-            <a href="/Artikel/Artikel Kiwi.html?artikel=s">Baca Selengkapnya ></a>
+            <a href="../Artikel/Artikel Kiwi.php?s=artikel">Baca Selengkapnya ></a>
           </div>
         </div>
       </div>
