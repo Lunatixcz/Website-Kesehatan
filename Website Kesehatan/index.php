@@ -40,7 +40,7 @@ if (isset($_POST['login_submit'])) {
         <div id="reg-card">
           <form id="login-form" method="POST" action="">
             <div class="sign-up text-center">
-              Don't have an account? <a href="./register.html?s=register">Sign Up</a>
+              Don't have an account? <a href="./register.php?=register">Sign Up</a>
             </div>
             <center>
               <h4>Log In</h4>

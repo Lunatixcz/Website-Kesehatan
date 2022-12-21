@@ -18,7 +18,7 @@
     <div class="featured-content text-center">
       <div class="row">
         <div class="col-6">
-          <a href="../Artikel/Artikel Resep.html?s=artikel">
+          <a href="../Artikel/Artikel Resep.php?=artikel">
             <div class="card left-card">
               <img src="./image/Recipe.jpg" class="card-img left-card-img" alt="..." style="height: 425px;">
               <div class="card-img-overlay">
@@ -32,7 +32,7 @@
         <div class="col-6">
           <div class="row">
             <div class="col">
-              <a href="../Artikel/Artikel M Sehat.html?s=artikel">
+              <a href="../Artikel/Artikel M Sehat.php?s=artikel">
                 <div class="card">
                   <img src="./image/Artikel MakananB.jpg" class=" card-img right-card-img" alt="...">
                   <div class="card-img-overlay">
@@ -45,7 +45,7 @@
               </a>
             </div>
             <div class="col">
-              <a href="/Artikel/Artikel Libur Sehat.html?s=artikel">
+              <a href="../Artikel/Artikel Libur Sehat.php?s=artikel">
                 <div class="card">
                   <img src="./image/Yogs.jpg" class="card-img right-card-img" alt="...">
                   <div class="card-img-overlay">
@@ -59,7 +59,7 @@
           </div>
           <div class="row row-bot">
             <div class="col">
-              <a href="/Artikel/Artikel Kucing.html?s=artikel">
+              <a href="../Artikel/Artikel Kucing.php?s=artikel">
                 <div class="card">
                   <img src="./image/Cataract.jpg" class="card-img right-card-img" alt="...">
                   <div class="card-img-overlay">
@@ -72,7 +72,7 @@
               </a>
             </div>
             <div class="col">
-              <a href="/Artikel/Artikel Bayi.html?s=artikel">
+              <a href="../Artikel/Artikel Bayi.php?s=artikel">
                 <div class="card">
                   <img src="./image/Artikel Bayi.jpg" class="card-img right-card-img" alt="...">
                   <div class="card-img-overlay">
@@ -104,7 +104,7 @@
               <h4 class="card-title">Trik Jitu untuk Mendapat Anak Laki-Laki</h4>
               <p class="card-text">Kesulitan mendapat anak laki-laki, mungkin kamu belum coba cara ini...
               </p>
-              <a href="/Artikel/Artikel Laki.html?s=artikel">Baca Selengkapnya ></a>
+              <a href="../Artikel/Artikel Laki.php?s=artikel">Baca Selengkapnya ></a>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@
               <h4 class="card-title">Sapi atau Kambingkah, yang Lebih Tinggi kolestrol</h4>
               <p class="card-text">Daging sapi dan Kambing sering dikomsumsi, namun apakah sehat...
               </p>
-              <a href="/Artikel/Artikel Daging.html?s=artikel">Baca Selengkapnya ></a>
+              <a href="../Artikel/Artikel Daging.html?s=artikel">Baca Selengkapnya ></a>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@
               <h4 class="card-title">Ini Manfaat Jambu Kristal untuk Ibu Hamil</h4>
               <p class="card-text">Buat ibu-ibu yang lagi hamil, ada informasi baru loh buat si kecil...
               </p>
-              <a href="/Artikel/Artikel Jambu.html?s=artikel">Baca Selengkapnya ></a>
+              <a href="../Artikel/Artikel Jambu.php?s=artikel">Baca Selengkapnya ></a>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@
               <p class="card-text">Selain rasanya yang lezat, buah kiwi ternyata menyimpan banyak manfaat
                 loh...
               </p>
-              <a href="/Artikel/Artikel Kiwi.html?s=artikel">Baca Selengkapnya ></a>
+              <a href="../Artikel/Artikel Kiwi.php?s=artikel">Baca Selengkapnya ></a>
             </div>
           </div>
         </div>

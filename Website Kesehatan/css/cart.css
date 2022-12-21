@@ -95,3 +95,18 @@ a {
 .btn-pad{
     padding-top: 8px !important;
 }
+.no-item {
+    margin-top: 120px;
+    color: #d20000;
+    opacity: 0.5;
+}
+
+.no-item h3 {
+    margin-top: 24px;
+    color: #d20000;
+}
+
+.no-item img {
+    height: 240px;
+    width: auto;
+}

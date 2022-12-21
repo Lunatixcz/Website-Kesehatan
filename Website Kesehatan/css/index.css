@@ -316,7 +316,7 @@ a:hover {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #d20000;
 }
 

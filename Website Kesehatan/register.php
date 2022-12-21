@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
         <div id="reg-card">
           <form id="reg-form" method="POST" action="">
             <div class="sign-up text-center">
-              Return to <a href="./login.html?s=login">Log In</a>
+              Return to <a href="./index.php?s=login">Log In</a>
             </div>
             <center>
               <h4>Register</h4>

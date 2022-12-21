@@ -1,52 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Website Kesehatan/css/index.css">
-    <link rel="stylesheet" href="./artikel.css">
-    <title>Artikel</title>
-</head>
+<?php
+include 'meta.php'
+?>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand larger" href="../Website Kesehatan/index.html"> <img
-                    src="./image/healthcare white.png" alt=""> UPH Sehat</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Website Kesehatan/dokter.html">Chat Dokter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../Website Kesehatan/artikel.html">Artikel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Website Kesehatan/obat.html">Obat</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav" id="reg-log">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Website Kesehatan/register.html">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Website Kesehatan/login.html">Log In</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!--Main Content-->
+    <?php include 'nav.php'?>
     <div class="container">
         <div class="article-content">
             <div class="article-title">
@@ -55,7 +15,7 @@
             </div>
             <div class="article-body">
                 <div class="img-container text-center">
-                    <img src="/Website Kesehatan/image/Artikel Kucing.jpg" alt="">
+                    <img src="./Image/./Artikel Kucing.jpg" alt="">
                 </div>
                 <div class="text-container justify-content">
                     <p>
@@ -142,44 +102,9 @@
         </div>
     </div>
 
+    <div style="height:120px;"></div>
 
-    <!--Footer-->
-    <div class="footer text-left">
-        <div class="container">
-            <table class="table">
-                <thead>
-                    <th scope="col">Hubungi Kami</th>
-                    <th scope="col">Lainnya</th>
-                    <th scope="col">Sosial Media</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="col">08XX-XXXX-XXXX</td>
-                        <td scope="col"><a href="">Syarat dan Ketentuan</a></td>
-                        <td scope="col"><a href="">Instagram</a></td>
-                    </tr>
-                    <tr>
-                        <td scope="col">sehat@uph.co.id</td>
-                        <td scope="col"><a href="">Kebijakan Privasi</a></td>
-                        <td scope="col"><a href="">Facebook</a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"></td>
-                        <td scope="col"><a href="">Twitter</a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"></td>
-                        <td scope="col"><a href="">LinkedIn</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <p id="copyright"> Hak Cipta&copy; UPH Sehat 2022</p>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <?php include '../Website Kesehatan/footer.php'?>
 </body>
 
 </html>

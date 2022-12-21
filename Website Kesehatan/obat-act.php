@@ -13,6 +13,8 @@ if($_POST){
 
     $query = "INSERT INTO obat VALUES(NULL, '$preskripsi', '$dokter', '$provinsi', '$kota', '$camat', '$pos', '$metode', NULL)";
     $execQuery = mysqli_query($con, $query);
+
+    echo '<script>window.location.replace("./dashboard.php?=dashboard");</script>';
 } else {
     echo "No Access";
 }
