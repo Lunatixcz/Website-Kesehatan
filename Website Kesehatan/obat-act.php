@@ -20,7 +20,7 @@ if ($_POST) {
     $query = "INSERT INTO obat(`preskripsi`, `dokter`, `provinsi`, `kota`, `camat`, `kode_pos`, `metode`, `id_user`) VALUES('$preskripsi', '$dokter', '$provinsi', '$kota', '$camat', '$pos', '$metode', '$user_id')";
     $execQuery = mysqli_query($con, $query);
 
-    echo '<script>window.location.replace("./dashboard.php?=dashboard");</script>';
+    echo '<script>window.location.replace("./cart.php?s=cart");</script>';
 } else {
     echo "No Access";
 }
