@@ -18,6 +18,7 @@ if (isset($_POST['login_submit'])) {
     echo "<script>alert('Login berhasil, selamat datang!')</script>";
 
     $_SESSION['name'] = $acc['nama'];
+    $_SESSION['id'] = $acc['id'];
     header('Location: dashboard.php');
   } else {
     echo "<script>alert('email atau password tidak ditemukan, silahkan coba lagi!')</script>";

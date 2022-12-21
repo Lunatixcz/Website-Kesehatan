@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
   $check = mysqli_query($con, "SELECT * FROM accounts WHERE `email` = '$email'");
 
   if ($check->num_rows <= 0) {
-    $query = "INSERT INTO accounts VALUES ('$nama','$tgl','$jk','$email','$pass')";
+    $query = "INSERT INTO accounts VALUES (NULL, '$nama','$tgl','$jk','$email','$pass')";
     $execQuery = mysqli_query($con, $query);
     if ($execQuery) {
       echo "<script>alert('Akun berhasil dibuat')</script>";

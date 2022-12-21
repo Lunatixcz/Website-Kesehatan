@@ -1,6 +1,6 @@
 <?php
 
-if($_POST){
+if ($_POST) {
     include 'config.php';
 
     $id = $_GET['id_transaksi'];
