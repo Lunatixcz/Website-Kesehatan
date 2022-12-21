@@ -81,7 +81,7 @@ if (isset($_POST['submit'])) {
               <input type="password" class="form-control" id="reg-pw" name="pw" minlength="4" maxlength="30" required>
             </div>
 
-            <button type="submit" class="btn btn-primary" id="reg-btn" name="submit">Submit</button>
+            <button type="submit" class="btn" id="reg-btn" name="submit">Register</button>
           </form>
         </div>
       </div>

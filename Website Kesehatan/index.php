@@ -60,7 +60,7 @@ if (isset($_POST['login_submit'])) {
             <div class="forgot">
               <a href="">Forgot Password?</a>
             </div>
-            <button type="submit" class="btn btn-primary" id="log_submit" name="login_submit">Submit</button>
+            <button type="submit" class="btn" id="log_submit" name="login_submit">Log In</button>
           </form>
         </div>
       </div>
